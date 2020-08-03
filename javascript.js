@@ -1,13 +1,14 @@
+// ========================= function  of  pin generate ===============
+
 let formGenerate = document.getElementById('generate-form');
 document.getElementById('generate-pin').addEventListener('click', function() {
-    // let formGenerate = document.getElementById('generate-form');
     let generateFrom = parseInt(formGenerate.value);
     let randomNumber = Math.round(Math.random() * 9000 + 1000);
     formGenerate.value = randomNumber;
 
 })
 
-
+// =======================function of calculator end number key ===================
 
 const calculateForm = document.getElementById('calculate-form')
 const calculateNumber = document.getElementsByClassName('number');
@@ -32,6 +33,7 @@ for (item of calculateNumber) {
 }
 
 
+// ===================function of submit button and  pin matched=============
 
 let submit = document.getElementById('submit-button').addEventListener('click', function() {
     console.log('yes')
